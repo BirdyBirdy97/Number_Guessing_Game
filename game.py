@@ -6,7 +6,6 @@ def secret_number():
     """Generates the number the user is guessing."""
     return random.randint(1, 100)
 
-
 def number_check(input, randnum, levelnum, times):
     """Checks to see if the player guessed the right number."""
     if input > randnum and times < levelnum:
@@ -42,7 +41,7 @@ def guess_the_number():
     
     if difficulty == "easy":
         difficulty_runner(keep_going, times, 10, num)
-    
+        
     elif difficulty == "hard":
         difficulty_runner(keep_going, times, 5, num)
 
